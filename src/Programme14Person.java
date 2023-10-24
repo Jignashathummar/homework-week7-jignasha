@@ -67,12 +67,12 @@ public class Programme14Person {
         return age;
     }
 
-    //method to set firstname
+    //Constructor to set firstname
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    //method to set last name
+    //Constructor to set last name
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }

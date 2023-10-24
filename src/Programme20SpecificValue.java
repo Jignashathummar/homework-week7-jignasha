@@ -20,6 +20,12 @@ public class Programme20SpecificValue {
 
     }
 
+    /**
+     * specify the value is in array or not
+     * @param array
+     * @param targetvalue
+     * @return
+     */
     public static boolean specificValue(String[] array, String targetvalue) {
         return Arrays.asList(array).contains(targetvalue);
     }

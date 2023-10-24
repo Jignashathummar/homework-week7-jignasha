@@ -46,7 +46,23 @@ public class Programme3Marksheet {
         String grade = getGrade(percentage);
 
         String result = (mathMarks >= 35 && sciMarks >= 35 && engMarks >= 35) ? "Pass" : "Fail";
+        printResult(name, rollNo, mathMarks, sciMarks, engMarks, percentage, result, grade);
+        sc.close();
+    }
 
+    /**
+     * method for print result
+     *
+     * @param name
+     * @param rollNo
+     * @param mathMarks
+     * @param sciMarks
+     * @param engMarks
+     * @param percentage
+     * @param result
+     * @param grade
+     */
+    public static void printResult(String name, int rollNo, int mathMarks, int sciMarks, int engMarks, double percentage, String result, String grade) {
         System.out.println(" _________________________________");
         System.out.println("|                                 |");
         System.out.println("|            Mark Sheet           |");
@@ -69,7 +85,6 @@ public class Programme3Marksheet {
         System.out.println("|     Grade     :    " + grade + "           |");
         System.out.println("|                                 |");
         System.out.println("|_________________________________|");
-        sc.close();
     }
 
     /**

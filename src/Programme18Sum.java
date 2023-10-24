@@ -13,10 +13,20 @@ public class Programme18Sum {
         System.out.println("Sum of Array " + Arrays.toString(num) + " without using stream: " + resultWithoutStream);
     }
 
+    /**
+     * sum of array
+     * @param num
+     * @return
+     */
     public static int arraySumUsingStream(int[] num) {
         return Arrays.stream(num).sum();
     }
 
+    /**
+     * sum of array
+     * @param num
+     * @return
+     */
     public static int arraySumWithoutStream(int[] num) {
         int sum = 0;
         for (int value : num) {

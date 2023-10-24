@@ -11,6 +11,11 @@ public class Programme19AverageArray {
         System.out.println("Average of Array " + Arrays.toString(num) + " is equal to using stream " + Arrays.stream(num).average().orElse(0.0));
     }
 
+    /**
+     * average of array
+     * @param num
+     * @return
+     */
     public static double averageOfArray(double[] num) {
         int length = num.length;
         double sum = 0;

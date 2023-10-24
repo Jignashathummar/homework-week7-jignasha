@@ -47,27 +47,40 @@ public class Programme5Salaryslip {
         double hra = calculateHRA(basicSalary);
 
         double grossSalary = calculateGrossSalary(hra, da, ta, pf, basicSalary);
+        printSalarySlip(employeeId, employeeName, basicSalary, hra, ta, da, pf, grossSalary);
 
+        scanner.close();
+    }
 
+    /**
+     * Print final salary slip
+     *
+     * @param employeeId
+     * @param employeeName
+     * @param basicSalary
+     * @param hra
+     * @param ta
+     * @param da
+     * @param pf
+     * @param grossSalary
+     */
+    public static void printSalarySlip(int employeeId, String employeeName, double basicSalary, double hra, double ta, double da, double pf, double grossSalary) {
         System.out.println("__________________________________");
         System.out.println("|            Salary Slip           |");
         System.out.println("|__________________________________|");
         System.out.println("| Employee Id       :      " + employeeId + "    |");
-        System.out.println("| Employee Name     :      " + employeeName + "|");
+        System.out.println("| Employee Name     :      " + employeeName + "   |");
         System.out.println("|                                  |");
         System.out.println("|__________________________________|");
         System.out.println("| Basic Salary      :      " + basicSalary + " |");
-        System.out.println("| HRA 10%           :      " + hra + "          |");
-        System.out.println("| TA 8%             :      " + ta + "           |");
-        System.out.println("| DA 9%             :      " + da + "           |");
-        System.out.println("| PF - 20&          :      " + pf + "           |");
+        System.out.println("| HRA 10%           :      " + hra + "  |");
+        System.out.println("| TA 8%             :      " + ta + "   |");
+        System.out.println("| DA 9%             :      " + da + "   |");
+        System.out.println("| PF - 20&          :      " + pf + "   |");
         System.out.println("|                                  |");
         System.out.println("|__________________________________|");
         System.out.println("|Gross Salary       :       " + grossSalary + "    |");
         System.out.println("|__________________________________|");
-        //System.out.println("|__________________________________|");
-        scanner.close();
-
     }
 
     /**

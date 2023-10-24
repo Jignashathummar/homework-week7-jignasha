@@ -12,7 +12,10 @@ public class Programme12 {
         scanner.close();
     }
 
-    //method for identify number or symbol
+    /**
+     * method for identify number or symbol
+     * @param input
+     */
     public static void identify(String input) {
         if (input.length() == 1) {
             char ch = input.charAt(0);

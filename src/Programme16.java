@@ -13,7 +13,13 @@ public class Programme16 {
         System.out.println(result);
         scanner.close();
     }
-//method for number verification
+
+    /**
+     * method for number verification
+     *
+     * @param num
+     * @return
+     */
     public static String numberVerfication(int num) {
         if (num < 0) {
             return "Enter number is NEGATIVE.";

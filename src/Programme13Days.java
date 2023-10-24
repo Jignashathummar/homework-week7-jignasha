@@ -14,6 +14,10 @@ public class Programme13Days {
         scanner.close();
     }
 
+    /**
+     * switch case for identify days name
+     * @param day
+     */
     public static void days(int day) {
         switch (day) {
             case 1:
